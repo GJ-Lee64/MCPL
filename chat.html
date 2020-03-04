@@ -40,46 +40,22 @@
     </div>
     
     <main class="chat-screen">
-        <ul class="chat__messages">
+        <ul class="chat__messages" id="messages">
             <span class="chat__timestamp">Friday, january 11, 2019</span>
             <li class="incoming-message message">
                 <img src="photo.jpg" class="g-avatar message__avatar">
                 <div class="message__content">
                     <div class="message__bubble">
-                        Congrats! I love our songs!
+                        Meesages are only tempolary! :(
                     </div>
-                    <span class="message__author">SPL Boys</span>
+                    <span class="message__author">GJ Lee</span>
                 </div>
             </li>
-            <li class="sent-message message">
-                <span class="message__timestamp"></span>
-                <div class="message__content">
-                    <div class="message__bubble">
-                        Me too. See you soon!
-                    </div>
-                </div>
-            </li>
-            <li class="incoming-message message">
-                <img src="photo.jpg" class="g-avatar message__avatar">
-                <div class="message__content">
-                    <div class="message__bubble">
-                        Maybe next weekend?
-                    </div>
-                    <span class="message__author">SPL Boys</span>
-                </div>
-            </li>
-            <li class="sent-message message">
-                <span class="message__timestamp"></span>
-                <div class="message__content">
-                    <div class="message__bubble">
-                        Sure! why not?
-                    </div>
-                </div>
-            </li>
+            
         </ul>
     </main>
     <div class="chat__write-container">
-        <input class="chat__write"
+        <input class="chat__write" id="textbox"
         type="text"
         placehoder="Send message" 
         class="chat__write-input">
@@ -88,6 +64,7 @@
         </div>
         <div class="chat__icon-right chat__icon">
             <div class="chat__write-column">
+                <button id="button">Send</button>
                 <span class="chat__write-icon">
                     <i class="far fa-smile-wink"></i>
                 </span>
@@ -97,8 +74,20 @@
             </div>
         </div>
     </div>
-    <div class="bigScreen">
-        Please make your screen small!
-    </div>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5e5fd6408d24fc226585ca24/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <script src="message.js"></script>
+    
 </body>
 </html>

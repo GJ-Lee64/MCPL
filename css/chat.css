@@ -85,13 +85,25 @@
     animation: float 2s linear infinite forwards;
 }
 
-.chat__icon{
+.chat__icon-left{
     font-size: 18px;
     transition: opacity .3s ease-in-out;
+    transition: transform .5s ease-in-out;
 }
 
-.chat__write:focus~ .chat__icon{
-    opacity: 0;
+.chat__write:focus~ .chat__icon-left{
+    opacity: 0.3;
+    transform:translate(100px, -100px);
+}
+.chat__icon-right{
+    font-size: 18px;
+    transition: opacity .3s ease-in-out;
+    transition: transform .5s ease-in-out;
+}
+
+.chat__write:focus~ .chat__icon-right{
+    opacity: 0.3;
+    transform:translate(-100px, -100px);
 }
 
 .chat__write i {
@@ -168,9 +180,7 @@
     border-bottom-left-radius: 0px;
 }
 
-.sent-message .message__bubble{
-    border-bottom-right-radius: 0px;
-}
+
 
 @keyframes incomingAnime {
     from{
@@ -200,4 +210,19 @@
 
 .sent-message{
     animation: sentAnime 0.5s ease-out forwards;
+}
+
+.chat-screen li {
+    background-color: white;
+    box-shadow:rgba(0,0,0,.35) 0 30px 60px;
+    padding:10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    max-width: 300px;
+    border-bottom-left-radius: 0px;
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+    margin-bottom: 20px;
+    align-self: flex-start;
 }
