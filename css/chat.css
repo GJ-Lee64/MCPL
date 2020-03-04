@@ -92,8 +92,8 @@
 }
 
 .chat__write:focus~ .chat__icon-left{
-    opacity: 0.3;
-    transform:translate(100px, -100px);
+    opacity: 0;
+    transform:translate(100%, -100px);
 }
 .chat__icon-right{
     font-size: 18px;
@@ -103,6 +103,16 @@
 
 .chat__write:focus~ .chat__icon-right{
     opacity: 0.3;
+    transform:translate(-100px, -100px);
+}
+
+#button {
+    font-size: 18px;
+    transition: opacity .3s ease-in-out;
+    transition: transform .5s ease-in-out;
+}
+
+.chat__write:focus~ .#button{
     transform:translate(-100px, -100px);
 }
 
