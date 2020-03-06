@@ -1,0 +1,21 @@
+.Main__Body {
+    background-color:#3498db;
+}
+.Main__title {
+    color: #ecf0f1;
+    font-size: 50px;
+    padding: 100px;
+    font-weight: 600;
+}
+
+.Main__discrpition{
+    color: #ecf0f1;
+    font-weight: 600;
+}
+
+.Main__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
