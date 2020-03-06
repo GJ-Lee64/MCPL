@@ -112,7 +112,7 @@
     transition: transform .5s ease-in-out;
 }
 
-.chat__write:focus~ .#button{
+.chat__write:focus~ #button{
     transform:translate(-100px, -100px);
 }
 
