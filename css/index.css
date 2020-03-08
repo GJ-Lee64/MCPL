@@ -4,7 +4,8 @@
 .Main__title {
     color: #ecf0f1;
     font-size: 50px;
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 30px;
     font-weight: 600;
 }
 
@@ -18,4 +19,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.Main__Enter{
+    border: 2px solid #ecf0f1;
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin: 30px;
+    font-weight: 600;
+    color: #ecf0f1;
 }

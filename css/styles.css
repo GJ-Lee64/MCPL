@@ -9,7 +9,6 @@
 @import "more.css";
 @import "settings.css";
 @import "chat.css";
-@import "mobile.css";
 @import "index.css";
 
 * {
@@ -58,3 +57,11 @@ nav{
     animation-delay: 0.5s;
 }
 
+.form,
+.greetings{
+    display: none;
+}
+
+.showing {
+    display: block;
+}

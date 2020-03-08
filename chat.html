@@ -26,7 +26,10 @@
                 <a href="notification.html"  class =header__back-btn>
                     <i class="fas fa-arrow-left"></i>
                 </a>
-                <h1 class="header__title">Best Friend</h1>
+                <form class="js-form form">
+                    <input type="text" placeholder="What is your name?">
+                </form>
+                <h4 class="js-greetings greeting" style="font-weight: 600; font-size: 25px;"></h4>
             </div>
             <div class="header__header-colum">
                 <span class="header__icon">
@@ -46,25 +49,27 @@
                 <img src="photo.jpg" class="g-avatar message__avatar">
                 <div class="message__content">
                     <div class="message__bubble">
-                        Messages are only tempolary! :(
+                        Update is going on!
                     </div>
                     <span class="message__author">GJ Lee</span>
+                    <ul class="js-toDoList">
                 </div>
             </div>
             
         </div>
     </main>
     <div class="chat__write-container">
-        <input class="chat__write" id="textbox"
-        type="text"
-        placehoder="Send message" 
-        class="chat__write-input">
+        <form class="js-toDoForm">
+            <input class="chat__write" id="textbox"
+            type="text"
+            placehoder="Write a to do" 
+            class="chat__write-input">
+       
         <div class="chat__icon-left chat__icon">
             <i class="far fa-plus-square"></i>
         </div>
         <div class="chat__icon-right chat__icon">
             <div class="chat__write-column">
-                <button id="button">Send</button>
                 <span class="chat__write-icon">
                     <i class="far fa-smile-wink"></i>
                 </span>
@@ -73,7 +78,10 @@
                 </span>
             </div>
         </div>
+        </form> 
     </div>
+
+
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -87,7 +95,8 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
-    <script src="message.js"></script>
-    <script src="clock.js"></script>    
+    <script src="clock.js"></script> 
+    <script src="todo.js"></script>  
+    <script src="greeting.js"></script>  
 </body>
 </html>

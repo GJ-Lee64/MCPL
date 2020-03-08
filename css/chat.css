@@ -22,7 +22,7 @@
     background-image: url("../chatBg.png");
     min-height: 200vh;
 }
-.chat__write-container{
+.chat__write-container, form{
     position: fixed;
     bottom: 0px;
     margin: 0 auto;
@@ -93,7 +93,6 @@
 
 .chat__write:focus~ .chat__icon-left{
     opacity: 0;
-    transform:translate(100%, -100px);
 }
 .chat__icon-right{
     font-size: 18px;
@@ -102,8 +101,7 @@
 }
 
 .chat__write:focus~ .chat__icon-right{
-    opacity: 0.3;
-    transform:translate(-100px, -100px);
+    opacity: 0;
 }
 
 #button {
@@ -232,7 +230,20 @@
     border-bottom-left-radius: 0px;
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     width: 50%;
-    margin-bottom: 20px;
+    margin: 15px;
     align-self: flex-start;
+}
+
+.js-toDoList button{
+    border: 2px solid #e74c3c; 
+    background-color: white; 
+    color: #e74c3c; 
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 10px;
+
+
 }
