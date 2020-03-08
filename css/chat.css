@@ -22,7 +22,7 @@
     background-image: url("../chatBg.png");
     min-height: 200vh;
 }
-.chat__write-container, form{
+.chat__write-container, .js-toDoForm{
     position: fixed;
     bottom: 0px;
     margin: 0 auto;
